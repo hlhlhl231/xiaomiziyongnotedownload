@@ -19,13 +19,13 @@ Xiaomi Note Exporter (小米笔记批量导出工具)
 确保你的电脑已安装 Python 3.x 环境，且已安装 requests 库：
 
 Bash
-pip install requests
+pip install requests   PIP安装请求
 2. 配置凭证
 本脚本采用“手动注入”方案以提高成功率：
 
 打开 export.py。
 
-在 getNotes() 函数的 cookieHeader 字典中，填入你的个人凭证数据（见下文获取教程）。
+**在 getNotes() 函数的 cookieHeader 字典中，填入你的个人凭证数据（见下文获取教程）。**
 
 保存文件。
 
@@ -53,7 +53,7 @@ python export.py
 需要提取的关键键值对包括：
 userId: 你的小米账号 ID。
 serviceToken: 核心身份令牌。
-i.mi.com_ph & i.mi.com_slh: 域名校验参数。
+i.mi.com_ph & i.mi.com_slh: 域名校验参数。i.mi.com_ph & i.mi.com_slh: 域名校验参数。
 填写建议：直接从浏览器复制对应的 Value 值并粘贴到代码中。
 
 ⚠️ 开发备注与安全
